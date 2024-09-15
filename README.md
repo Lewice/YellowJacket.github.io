@@ -31,7 +31,7 @@
 	font-weight: bold;
 	}
 	body {
-	background-color: lightblue;
+	background-color: grey;
 	}
   </style>
   <script>
@@ -55,7 +55,7 @@
   });
 
   // Change commission rate from 5% to 10%
-  const commission = total * 0.20;
+  const commission = total * 0.0;
 
   document.getElementById('total').innerText = total.toFixed(2);
   document.getElementById('commission').innerText = commission.toFixed(2);
@@ -109,18 +109,16 @@
 
   // Form Submission Logic for Spreadsheet
   $.ajax({
-    url: "https://api.apispreadsheets.com/data/Br2drqsPeud2RqsY/"
-
-)",
+    url: "?",
     type: "post",
     data: formData,
     headers: {
-      accessKey: "28904e0f4b8e8db8a9e13672e1d5737f",
-      secretKey: "8567b1bbca9efedea1adcb1e88d409b0",
+      accessKey: "?",
+      secretKey: "?",
       "Content-Type": "application/x-www-form-urlencoded",
     },
     success: function () {
-      alert("Please Click Okay!");
+      alert("Form Data Submitted to Spreadsheet and Discord :)");
       resetForm();
     },
     error: function () {
@@ -188,53 +186,49 @@
   <h2>Yellow Jacket</h2>
 
   <form id="menuForm">
-  <h3>Soft</h3>
+  <h3></h3>
     <label>
-      <input type="checkbox" class="menu-item" data-price="125"> Coke $125
+      <input type="checkbox" class="menu-item" data-price="200"> Coke $125
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="150"> Lemonade $150
+      <input type="checkbox" class="menu-item" data-price="80"> Lemonade $150
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="125"> Green tea $125
+      <input type="checkbox" class="menu-item" data-price="100"> Green tea $125
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="125"> Ginger Ale  $125
+      <input type="checkbox" class="menu-item" data-price="120"> Ginger Ale  $125
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="200"> Cigars $200
+      <input type="checkbox" class="menu-item" data-price="80"> Cigars $200
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="500"> Boxes $500
-      <input type="number" class="quantity" value="1" min="1">
-    </label>
-
-
-	
-	<h3>Booze </h3>
-    <label>
-      <input type="checkbox" class="menu-item" data-price="190"> Raspberry Momaso  $190
+      <input type="checkbox" class="menu-item" data-price="40"> Boxes $500
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="150">  Bloody Mary  $150
+      <input type="checkbox" class="menu-item" data-price="1800"> Raspberry Momaso  $190
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="190"> Pina Colada  $190
+      <input type="checkbox" class="menu-item" data-price="700"> Bloody Mary  $150
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="100"> Vodka Shot  $100 
+      <input type="checkbox" class="menu-item" data-price="2000"> Pina Colada  $190
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="100"> Whiskey  $100
+      <input type="checkbox" class="menu-item" data-price="150"> Vodka Shot  $100
+      <input type="number" class="quantity" value="1" min="1">
+    </label>
+    <label>
+      <input type="checkbox" class="menu-item" data-price="500"> Whiskey  $100
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
@@ -242,15 +236,15 @@
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="190">  Stinger $190
+      <input type="checkbox" class="menu-item" data-price="200"> Stinger $190
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="150"> Rum n Coke $150
+      <input type="checkbox" class="menu-item" data-price="2500"> Rum n Coke $150
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="150"> Yellow Jack Larger $150 
+      <input type="checkbox" class="menu-item" data-price="300"> Yellow Jack Larger $150
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
@@ -258,90 +252,72 @@
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="300"> Moonshine $300
-      <input type="number" class="quantity" value="1" min="1">
-    </label>
-	
-	
-	
-	
-	
-	
-	<h3>Food</h3>
-    <label>
-      <input type="checkbox" class="menu-item" data-price="225"> Fish and Chips $225
+      <input type="checkbox" class="menu-item" data-price="100"> Moonshine $300
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="225"> Full English Breakfast $225
+      <input type="checkbox" class="menu-item" data-price="45"> Fish and Chips $225
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="225"> Meat pie and Mash $225
+      <input type="checkbox" class="menu-item" data-price="45"> Full English Breakfast $225
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="250"> Sunday Roast $250
+      <input type="checkbox" class="menu-item" data-price="45"> Meat pie and Mash $225
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="175"> Wingz $175
+      <input type="checkbox" class="menu-item" data-price="45"> Sunday Roast $250
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="175"> Crisp Sandwhich $175
+      <input type="checkbox" class="menu-item" data-price="45"> Wingz $175
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="150"> Apple Scone $150
+      <input type="checkbox" class="menu-item" data-price="45"> Crisp Sandwhich $175
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="150"> Blueberry Scone $150
+      <input type="checkbox" class="menu-item" data-price="45"> Apple Scone $150
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="150"> Chocolate Scone $150
+      <input type="checkbox" class="menu-item" data-price="45"> Blueberry Scone $150
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="150"> Grape Scone $150
-      <input type="number" class="quantity" value="1" min="1">
-    </label>
-
-
-
-	
-	<h3>Specials </h3>
-    <label>
-      <input type="checkbox" class="menu-item" data-price="2500"> 10 Moonshine  $2.500
+      <input type="checkbox" class="menu-item" data-price="45"> Chocolate Scone $150
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="2250"> 5 Mains x 5 Deserts x 5 Drinks $2250
+      <input type="checkbox" class="menu-item" data-price="45"> Grape Scone $150
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="1500"> PD Special 5 Mains x 5 Drinks $1500
+      <input type="checkbox" class="menu-item" data-price="45"> 10 Moonshine  $2.500 
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="3000"> Workers special  10 x Cigars 10 x Drinks x 5 Food (sides) $ 3000
+      <input type="checkbox" class="menu-item" data-price="45"> 5 Mains x 5 Deserts x 5 Drinks $2250
       <input type="number" class="quantity" value="1" min="1">
     </label>
-
-
-	
-	
+    <label>
+      <input type="checkbox" class="menu-item" data-price="45"> PD Special 5 Mains x 5 Drinks $1500 
+      <input type="number" class="quantity" value="1" min="1">
+    </label>
+    <label>
+      <input type="checkbox" class="menu-item" data-price="45"> Workers special  10 x Cigars 10 x Drinks x 5 Food (sides) $ 3000
+      <input type="number" class="quantity" value="1" min="1">
+    </label>
 	
 	
 	<div style="margin-bottom: 30px;"></div>
 	
 	<label for="discount">Select Discount:</label>
     <select id="discount" onchange="calculateTotals()">
-      <option value="0">No Discount</option>
-      <option value="25">25% Discount (Employee Discount)</option>
-
+      <option value="25">Employee Discount</option>
     </select>
 	
 	<div style="margin-bottom: 30px;"></div>
@@ -356,7 +332,7 @@
 	
 
     <p>Total: $<span id="total"></span></p>
-    <p>Commission (50%): $<span id="commission"></span></p>
+    <p>Commission (0%): $<span id="commission"></span></p>
 	
 	<div style="margin-bottom: 30px;"></div>
 
