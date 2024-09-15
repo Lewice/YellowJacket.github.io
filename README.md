@@ -321,6 +321,7 @@
 	
 	<label for="discount">Select Discount:</label>
     <select id="discount" onchange="calculateTotals()">
+      <option value="0">No Discount</option>
       <option value="25">Employee Discount</option>
     </select>
 	
