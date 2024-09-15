@@ -185,7 +185,7 @@
 </head>
 <body>
 
-  <h2>?</h2>
+  <h2>Yellow Jacket</h2>
 
   <form id="menuForm">
   <h3>Soft</h3>
